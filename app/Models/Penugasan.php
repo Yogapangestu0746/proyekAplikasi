@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\MOdels;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Lingkup_pekerjaan extends Model
+class Penugasan extends Model
 {
     use HasFactory;
 }
