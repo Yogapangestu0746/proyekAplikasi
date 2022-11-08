@@ -39,18 +39,21 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item {{ active_class(['apps/chat']) }}">
-        <a href="{{ url('/apps/chat') }}" class="nav-link">
-          <i class="link-icon" data-feather="message-square"></i>
-          <span class="link-title">Chat</span>
+     
+      <li class="nav-item {{ active_class(['alat/view_alat']) }}">
+        <a href="{{ url('/alat/view_alat') }}" class="nav-link">
+          <i class="link-icon" data-feather="tool"></i>
+          <span class="link-title">Kelola Alat</span>
         </a>
       </li>
-      <li class="nav-item {{ active_class(['apps/calendar']) }}">
-        <a href="{{ url('/apps/calendar') }}" class="nav-link">
-          <i class="link-icon" data-feather="calendar"></i>
-          <span class="link-title">Calendar</span>
+
+      <li class="nav-item {{ active_class(['bahan/view_bahan']) }}">
+        <a href="{{ url('/bahan/view_bahan') }}" class="nav-link">
+          <i class="link-icon" data-feather="briefcase"></i>
+          <span class="link-title">Kelola Bahan</span>
         </a>
       </li>
+
       <li class="nav-item nav-category">Components</li>
       <li class="nav-item {{ active_class(['ui-components/*']) }}">
         <a class="nav-link" data-toggle="collapse" href="#uiComponents" role="button" aria-expanded="{{ is_active_route(['ui-components/*']) }}" aria-controls="uiComponents">
