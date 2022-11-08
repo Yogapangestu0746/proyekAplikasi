@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('penugasans', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_lp');
-            $table->date('tagl_mulai');
+            $table->foreign('id_lp')
+                ->references('id')->on('lingkup_pekerjaans')->onDelete('cascade');
+            $table->date('tgl_mulai');
             $table->date('tgl_selesai');
             $table->string('tempat',255);
-            $table->foreign('id_lp')->references('id')->on('lingkup_pekerjaans')->onDelete('cascade');
             $table->timestamps();
         });
     }
