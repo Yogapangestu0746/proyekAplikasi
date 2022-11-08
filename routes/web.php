@@ -21,10 +21,20 @@ Route::group(['prefix' => 'email'], function(){
     Route::get('compose', function () { return view('pages.email.compose'); });
 });
 
-Route::group(['prefix' => 'apps'], function(){
-    Route::get('chat', function () { return view('pages.apps.chat'); });
-    Route::get('calendar', function () { return view('pages.apps.calendar'); });
+Route::group(['prefix' => 'alat'], function(){
+    Route::get('view_alat', function () { return view('pages.alat.view_alat'); });
+    Route::get('add_alat', function () { return view('pages.alat.add_alat'); });
+    Route::get('edit_alat', function () { return view('pages.alat.edit_alat'); });
 });
+
+Route::group(['prefix' => 'bahan'], function(){
+    Route::get('view_bahan', function () { return view('pages.bahan.view_bahan'); });
+    Route::get('add_bahan', function () { return view('pages.bahan.add_bahan'); });
+    Route::get('edit_bahan', function () { return view('pages.bahan.edit_bahan'); });
+});
+
+
+
 
 Route::group(['prefix' => 'ui-components'], function(){
     Route::get('alerts', function () { return view('pages.ui-components.alerts'); });
